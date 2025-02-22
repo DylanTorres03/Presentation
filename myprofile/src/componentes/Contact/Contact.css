@@ -1,0 +1,75 @@
+.contact {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1a1f3d 0%, #050a24 100%);
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-input,
+.contact-textarea {
+  padding: 0.75rem;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #1a1f3d;
+  color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición */
+}
+
+.contact-input:hover,
+.contact-textarea:hover {
+  border-color: #3498db; /* Cambia el color del borde */
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.6); /* Agrega una sombra */
+}
+
+.contact-textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-button {
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+}
+
+.success-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #4caf50; /* Fondo verde */
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Animación de desvanecimiento */
+.success-message.fade-out {
+  opacity: 0;
+}
